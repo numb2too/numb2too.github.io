@@ -30,10 +30,10 @@
     .btn-group{
         display: flex;
         justify-content: center;
-        align-items: center;       transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+        align-items: center;       
     }
 
-    .btn-group:hover{
+    .btn-group>div:hover{
 
         transform: scale(1.12);
     }
@@ -41,6 +41,7 @@
     .btn-group>div{
         border-radius: 14px;
     background: white;
+    transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
     }
 
     .btn-group-href{
