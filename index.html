@@ -2,7 +2,71 @@
 <html>
 
 <style>
+    .icon{
+        width: 48px;
+        height: 48px;
+    }
 
+    
+    .head-pic{
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+    }
+
+    .head-pic-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .head-pic-group>div{
+        margin-top: 12px;
+    }
+
+    .btn-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;       transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+    }
+
+    .btn-group:hover{
+
+        transform: scale(1.12);
+    }
+
+    .btn-group>div{
+        border-radius: 14px;
+    background: white;
+    }
+
+    .btn-group-href{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+    }
+
+    .btn-group-href>div+div{
+        margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    }
+
+    body{
+        
+    background: #2a3235;
+
+    }
+
+    .head-pic-group>div+div{
+        color:white;
+    }
 </style>
 
 <head>
@@ -11,9 +75,28 @@
 </head>
 
 <body>
-    大家好
-    <div><a href="https://www.instagram.com/monkey518abc/">老蘇的IG</div>
-        <div><a href="https://forum.gamer.com.tw/B.php?bsn=07650&subbsn=0">我愛楓之谷</div>
+    <div class="head-pic-group">
+        <div>
+            <img class="head-pic" src="https://www.citypng.com/public/uploads/preview/-11595327237ulqckjabpb.png" alt="">
+        </div>
+        <div>
+            @XXXX
+        </div>
+    </div>
+    <div>
+        <div class="btn-group">
+            <div>
+                <a class="btn-group-href" href="https://www.instagram.com/monkey518abc/" target="_blank" rel="noopener" height="auto" >
+                    <div>
+                        <img class="icon" src="https://www.citypng.com/public/uploads/preview/-11595327237ulqckjabpb.png" alt="">
+                    </div>
+                    <div>
+                        老蘇的IG
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
